@@ -3,32 +3,15 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+import Header from './header/Header';
 
 function App() {
   return (    
     <Router>
       <div className="App">
-        <header className="App-header">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/resume">Resume</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
 
         <Switch>
           <Route path="/about">
