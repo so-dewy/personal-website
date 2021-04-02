@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,9 +7,9 @@ import {
 import Header from './header/Header';
 
 function App() {
-  return (    
+  return (
     <Router>
-      <div className="App">
+      <div>
         <Header />
 
         <Switch>

@@ -1,12 +1,16 @@
 import NavigationList from './NavigationList';
+import styled from 'styled-components';
+
+const StyledHeader = styled.header`
+  min-height: 8vh;
+  font-size: calc(8px + 2vmin);
+`;
 
 function Header() {
   return (
-    <header className="App-header">
-      <nav>
-        <NavigationList />
-      </nav>
-    </header>
+    <StyledHeader>
+      <NavigationList />
+    </StyledHeader>
   );
 }
 
