@@ -7,6 +7,9 @@ const StyledLink = styled(Link)`
   color: palevioletred;
   text-decoration: none;
   margin: 1rem;
+  &:hover {
+    color: red;
+  }
 `;
 
 function NavigationItem(props: { path: string, text: string }) {
